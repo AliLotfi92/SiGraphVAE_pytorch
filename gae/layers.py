@@ -20,7 +20,7 @@ class GraphConvolution(Module):
         self.act = act
         self.init = math.sqrt(6.0 / (self.in_features + self.out_features))
         self.weight = Parameter(torch.nn.init.uniform_(torch.FloatTensor(in_features, out_features), a=-self.init, b=self.init), requires_grad=True)
-        self.reset_parameters()
+        #self.reset_parameters()
 
     def reset_parameters(self):
         torch.nn.init.xavier_uniform_(self.weight)
@@ -51,7 +51,7 @@ class GraphConvolutionK(Module):
         self.dropout = dropout
         self.act = act
         self.weight = Parameter(torch.nn.init.uniform_(torch.FloatTensor(in_features, out_features), a=-self.init, b=self.init), requires_grad=True)
-        self.reset_parameters()
+        #self.reset_parameters()
 
     def reset_parameters(self):
         torch.nn.init.xavier_uniform_(self.weight)
