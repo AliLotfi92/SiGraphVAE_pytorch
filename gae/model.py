@@ -3,11 +3,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 import math
 from torch.distributions import Bernoulli
-from distributions import RiemannianNormal, WrappedNormal
 from utils import Constants
 
 from layers import GraphConvolution, GraphConvolutionK
-import manifolds
 
 
 class GCNModelVAE(nn.Module):
