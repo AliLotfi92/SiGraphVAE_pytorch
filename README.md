@@ -8,9 +8,13 @@ T. N. Kipf, M. Welling, [Variational Graph Auto-Encoders](https://arxiv.org/abs/
 The code in this repo is based on or refers to https://github.com/tkipf/gae, https://github.com/tkipf/pygcn and https://github.com/vmasrani/gae_in_pytorch.
 
 ### Requirements
-- Python 3
-- PyTorch 0.4
-- install requirements via ```
+scipy==1.0.0
+numpy==1.14.0
+torch==1.4.0
+networkx==2.1
+scikit_learn==0.19.2
+tensorboard==2.2.1
+```
 pip install -r requirements.txt``` 
 
 ### How to run
