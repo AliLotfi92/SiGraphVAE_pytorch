@@ -17,5 +17,5 @@ pip install -r requirements.txt
 ```
 ### How to run
 ```bashb
-python gae/train.
+python gae/train.py
 ```
